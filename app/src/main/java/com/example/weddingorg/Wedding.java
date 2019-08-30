@@ -6,12 +6,13 @@ public class Wedding {
 
     public Wedding(String nama_wedding, int pic){
         this.nama_wedding = nama_wedding;
-        this.pic = this.pic;
+        this.pic = pic;
     }
     public String getWeddingName(){
         return nama_wedding;
 
     }
+
     public void setWeddingName(String nama_wedding){
         this.nama_wedding = nama_wedding;
 

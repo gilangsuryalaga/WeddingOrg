@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView mRecyclerView;
     private RecyclerView.LayoutManager mLayoutManager;
     private List<Wedding> weddingList;
-    private com.example.weddingorg.WeddingAdapter weddingAdapter;
+    private WeddingAdapter weddingAdapter;
 
     String[] wedding_name ={"Wedding1","Wedding2","Wedding3","Wedding4","Wedding5","Wedding6","Wedding7","Wedding8","Wedding9","Wedding10"};
 
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
             Wedding wedding = new Wedding(wedding_name[i],pic[i]);
             weddingList.add(wedding);
         }
-        weddingAdapter = new com.example.weddingorg.WeddingAdapter(weddingList);
+        weddingAdapter = new WeddingAdapter(weddingList);
 
         mRecyclerView.setAdapter(weddingAdapter);
         weddingAdapter.notifyDataSetChanged();
